@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".DescraptionView">
+    <include layout="@layout/appbar" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:padding="16dp"
+        android:text="Your Task Description"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:layout_marginRight="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:textColor="#030303"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnToggleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:fontFamily="monospace"
+        android:text="Task Status"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_edit" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:fontFamily="monospace"
+        android:text="Back"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nice" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
